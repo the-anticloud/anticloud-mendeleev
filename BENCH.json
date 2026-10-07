@@ -1,0 +1,279 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "MENDELEEV",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\CHEMICAL_MANUFACTURING\\MENDELEEV\\UPSTREAM_CLONE",
+  "git": {
+   "head": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE",
+   "url": "https://github.com/the-anticloud/OPENMRS_CORE.git",
+   "branch": "master",
+   "committed_at": "2026-09-29T11:06:59+04:00",
+   "sha_verified_from": "local clone .git file read (no .git dir in clone)"
+  }
+ },
+ "metrics": {
+  "files_total": 184,
+  "source_files_scanned": 89,
+  "lines_of_code": 7353,
+  "languages": {
+   ".py": 88,
+   ".rst": 34,
+   ".png": 20,
+   ".ipynb": 12,
+   ".md": 6,
+   "(none)": 5,
+   ".yaml": 2,
+   ".bat": 2,
+   ".cfg": 1,
+   ".ini": 1,
+   ".cff": 1,
+   ".in": 1,
+   ".lock": 1,
+   ".toml": 1,
+   ".yml": 1
+  }
+ },
+ "licence": {
+  "spdx": "MIT",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 2,
+  "unique": 2,
+  "by_ecosystem": {
+   "pypi": 2
+  },
+  "list": [
+   {
+    "ecosystem": "pypi",
+    "name": "sqlalchemy",
+    "version": ">=1.3.0",
+    "source_file": "setup.py",
+    "raw": "sqlalchemy>=1.3.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "element.py",
+    "version": "= mendeleev.cli:clielement",
+    "source_file": "setup.py",
+    "raw": "element.py = mendeleev.cli:clielement"
+   }
+  ]
+ },
+ "owasp_top10": {
+  "total_findings": 8,
+  "files_with_findings": 7,
+  "severity": {
+   "high": 0,
+   "medium": 0,
+   "low": 8
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A03-Injection": {
+    "count": 0,
+    "findings": []
+   },
+   "A04-InsecureDesign": {
+    "count": 3,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "mendeleev/models.py",
+      "line": 1128,
+      "cwe": "CWE-",
+      "snippet": "# TODO: move to utils"
+     },
+     {
+      "severity": "low",
+      "file": "mendeleev/utils.py",
+      "line": 3,
+      "cwe": "CWE-",
+      "snippet": "# TODO: can be removed after dropping support for python 3.8"
+     },
+     {
+      "severity": "low",
+      "file": "docs/source/conf.py",
+      "line": 18,
+      "cwe": "CWE-",
+      "snippet": "autodoc_mock_imports = ["
+     }
+    ]
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 0,
+    "findings": []
+   },
+   "A06-VulnerableComponents": {
+    "count": 0,
+    "findings": []
+   },
+   "A07-AuthFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 5,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "mendeleev/ciaawparser.py",
+      "line": 9,
+      "cwe": "CWE-319",
+      "snippet": "based on http://stackoverflow.com/a/28766684"
+     },
+     {
+      "severity": "low",
+      "file": "mendeleev/econf.py",
+      "line": 331,
+      "cwe": "CWE-319",
+      "snippet": "`doi:10.1103/PhysRev.36.57 <http://www.dx.doi.org/10.1103/PhysRev.36.57>`_"
+     },
+     {
+      "severity": "low",
+      "file": "mendeleev/models.py",
+      "line": 188,
+      "cwe": "CWE-319",
+      "snippet": "JCTC, 12(8), 3603-3613. http://doi.org/10.1021/acs.jctc.6b00361"
+     },
+     {
+      "severity": "low",
+      "file": "mendeleev/vis/seaborn.py",
+      "line": 29,
+      "cwe": "CWE-319",
+      "snippet": "see http://stanford.edu/~mwaskom/software/seaborn/generated/seaborn.heatmap.html"
+     },
+     {
+      "severity": "low",
+      "file": "conda-recipe/build.sh",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "# http://docs.continuum.io/conda/build.html"
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 0,
+  "files_with_findings": 0,
+  "severity": {
+   "high": 0,
+   "medium": 0,
+   "low": 0
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM03-SupplyChain": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM04-DataPoisoning": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM09-Misinformation": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:5ebe2a23-45ba-5adf-a828-4dc87305d03f",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-06T09:53:00Z",
+   "component": {
+    "type": "application",
+    "name": "MENDELEEV",
+    "version": "83b357604d34",
+    "bom-ref": "pkg:generic/anticloud/MENDELEEV@83b357604d34",
+    "purl": "pkg:generic/anticloud/MENDELEEV@83b357604d34",
+    "licenses": [
+     {
+      "license": {
+       "id": "MIT"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": [
+   {
+    "type": "library",
+    "name": "sqlalchemy",
+    "version": ">=1.3.0",
+    "purl": "pkg:pypi/sqlalchemy@1.3.0",
+    "bom-ref": "pypi/sqlalchemy@>=1.3.0"
+   },
+   {
+    "type": "library",
+    "name": "element.py",
+    "version": "= mendeleev.cli:clielement",
+    "purl": "pkg:pypi/element.py@mendeleev.cli:clielement",
+    "bom-ref": "pypi/element.py@= mendeleev.cli:clielement"
+   }
+  ]
+ },
+ "elapsed_seconds": 21.49
+}
