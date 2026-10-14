@@ -1,0 +1,61 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:5ebe2a23-45ba-5adf-a828-4dc87305d03f",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-06T09:53:00Z",
+  "component": {
+   "type": "application",
+   "name": "MENDELEEV",
+   "version": "83b357604d34",
+   "bom-ref": "pkg:generic/anticloud/MENDELEEV@83b357604d34",
+   "purl": "pkg:generic/anticloud/MENDELEEV@83b357604d34",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ]
+  },
+  "properties": [
+   {
+    "name": "anticloud:source-commit",
+    "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+   },
+   {
+    "name": "anticloud:source-url",
+    "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+   },
+   {
+    "name": "anticloud:tier",
+    "value": "tier-agent"
+   }
+  ]
+ },
+ "components": [
+  {
+   "type": "library",
+   "name": "sqlalchemy",
+   "version": ">=1.3.0",
+   "purl": "pkg:pypi/sqlalchemy@1.3.0",
+   "bom-ref": "pypi/sqlalchemy@>=1.3.0"
+  },
+  {
+   "type": "library",
+   "name": "element.py",
+   "version": "= mendeleev.cli:clielement",
+   "purl": "pkg:pypi/element.py@mendeleev.cli:clielement",
+   "bom-ref": "pypi/element.py@= mendeleev.cli:clielement"
+  }
+ ],
+ "source": {
+  "git": {
+   "head": null,
+   "url": null,
+   "sha_unverified": true,
+   "note": "contamination removed; resolve via GitHub API before quoting"
+  }
+ }
+}
